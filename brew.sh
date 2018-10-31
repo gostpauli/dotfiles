@@ -8,6 +8,8 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+brew tap caskroom/cask
+
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
@@ -40,16 +42,27 @@ brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
+brew install macvim
 brew install grep
 brew install openssh
-brew install screen
-brew install homebrew/php/php56 --with-gmp
+brew install tmux
+brew cask install iterm2
+brew cask install intellij-idea
+brew cask install PyCharm
+brew cask install DataGrip
+
+
+# Development
+brew install python3
+brew install python2
+brew install git
+
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+#brew tap bramstein/webfonttools
+#brew install sfnt2woff
+#brew install sfnt2woff-zopfli
+#brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
@@ -63,7 +76,7 @@ brew install fcrackzip
 brew install foremost
 brew install hashpump
 brew install hydra
-brew install john
+#brew install john
 brew install knock
 brew install netpbm
 brew install nmap
