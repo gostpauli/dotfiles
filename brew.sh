@@ -47,10 +47,6 @@ brew install grep
 brew install openssh
 brew install tmux
 brew cask install iterm2
-brew cask install intellij-idea
-brew cask install PyCharm
-brew cask install DataGrip
-
 
 # Development
 brew install python3
@@ -58,6 +54,12 @@ brew install python2
 brew install git
 brew install kubernetes-cli
 brew cask install java
+brew install scala
+brew install sbt
+brew cask install intellij-idea
+brew cask install PyCharm
+brew cask install DataGrip
+
 
 # Install font tools.
 #brew tap bramstein/webfonttools

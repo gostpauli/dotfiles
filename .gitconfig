@@ -27,7 +27,7 @@
 	d = diff
 
 	# Commit
-	cm = commit -m 
+	cm = commit
 
 	# Commit all changes
 	ca = !git add -A && git commit -av
