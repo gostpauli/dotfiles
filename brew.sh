@@ -56,7 +56,8 @@ brew cask install DataGrip
 brew install python3
 brew install python2
 brew install git
-
+brew install kubernetes-cli
+brew cask install java
 
 # Install font tools.
 #brew tap bramstein/webfonttools
@@ -103,6 +104,8 @@ brew install pigz
 brew install pv
 brew install rename
 brew install rlwrap
+brew install snappy
+brew install snzip
 brew install ssh-copy-id
 brew install tree
 brew install vbindiff

@@ -15,11 +15,24 @@
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
 
+	# Push current branch
+
 	# Clone a repository including all submodules
 	c = clone --recursive
 
+	# Status
+	st = status
+
+	# Diff
+	d = diff
+
+	# Commit
+	cm = commit -m 
+
 	# Commit all changes
 	ca = !git add -A && git commit -av
+	# Add all
+	aa = !git add -A
 
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
@@ -185,3 +198,5 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = gostpauli@gmail.com\n
