@@ -28,6 +28,7 @@ fi
 # python
 alias p37=". ~/.venv/python37/bin/activate"
 alias p3=". ~/.venv/python3/bin/activate"
+alias activate=". ./venv/bin/activate"
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"

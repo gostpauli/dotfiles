@@ -59,6 +59,7 @@ brew install sbt
 brew cask install intellij-idea
 brew cask install PyCharm
 brew cask install DataGrip
+brew cask install WebStorm
 
 
 # Install font tools.

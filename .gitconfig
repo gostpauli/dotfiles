@@ -26,6 +26,12 @@
 	# Diff
 	d = diff
 
+	# Chekckout
+	co = checkout
+
+	# Branch
+	br = branch
+
 	# Commit
 	cm = commit
 
