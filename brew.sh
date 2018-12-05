@@ -51,6 +51,7 @@ brew cask install iterm2
 # Development
 brew install python3
 brew install python2
+brew install pyenv
 brew install git
 brew install kubernetes-cli
 brew cask install java
@@ -60,6 +61,7 @@ brew cask install intellij-idea
 brew cask install PyCharm
 brew cask install DataGrip
 brew cask install WebStorm
+brew cask install https://raw.githubusercontent.com/rapid7/awsaml/master/brew/cask/awsaml.rb
 
 
 # Install font tools.

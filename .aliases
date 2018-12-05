@@ -157,3 +157,12 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Kubectl
+alias ks=kubectl
+
+alias k='kubectl --context=$prod'
+
+alias intake='kubectl --context=$prod -l app=pai-analyze-intake'
+
+alias features='kubectl --context=$prod -l app=pai-analyze-features'
