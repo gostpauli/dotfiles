@@ -52,6 +52,7 @@ brew cask install iterm2
 brew install python3
 brew install python2
 brew install pyenv
+brew install pyenv-virtualenv
 brew install git
 brew install kubernetes-cli
 brew cask install java

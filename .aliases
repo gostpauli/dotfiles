@@ -165,4 +165,7 @@ alias k='kubectl --context=$prod'
 
 alias intake='kubectl --context=$prod -l app=pai-analyze-intake'
 
-alias features='kubectl --context=$prod -l app=pai-analyze-features'
+alias featurs='kubectl --context=$prod -l app=pai-analyze-features'
+
+# Pyenv
+alias pe=pyenv
