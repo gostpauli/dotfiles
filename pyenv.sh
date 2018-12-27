@@ -6,3 +6,5 @@ pyenv install 3.7.1
 pyenv virtualenv p3
 pyenv global p3
 
+
+# TODO: add updating pip, setuptools, and other standard tools in the different environments

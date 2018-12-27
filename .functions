@@ -169,3 +169,19 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# GIT
+function branch() {
+  echo $(git symbolic-ref --quiet --short HEAD 2> /dev/null)
+}
+
+function gpush() {
+	current_branch=$(branch)
+	git push origin ${current_branch}
+}
+
+function gpull() {
+	current_branch=$(branch)
+	git pull origin $current_branch
+}
+   
