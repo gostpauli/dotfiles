@@ -47,6 +47,8 @@ brew install grep
 brew install openssh
 brew install tmux
 brew cask install iterm2
+brew cask install java
+brew cask install homebrew/cask-versions/java8
 
 # Development
 brew install python3
@@ -55,9 +57,9 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install git
 brew install kubernetes-cli
-brew cask install java
 brew install scala
 brew install sbt
+brew install elasticsearch
 brew cask install intellij-idea
 brew cask install PyCharm
 brew cask install DataGrip

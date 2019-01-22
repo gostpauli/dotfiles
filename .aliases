@@ -167,5 +167,9 @@ alias intake='kubectl --context=$prod -l app=pai-analyze-intake'
 
 alias featurs='kubectl --context=$prod -l app=pai-analyze-features'
 
+alias sf-api='kubectl --context=$prod -l app=pai-salesforce-api'
+
+alias ass='kubectl --context=$prod -l app=pai-activity-service'
+
 # Pyenv
 alias pe=pyenv
