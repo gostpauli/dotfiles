@@ -165,11 +165,11 @@ alias k='kubectl --context=$prod'
 
 alias intake='kubectl --context=$prod -l app=pai-analyze-intake'
 
-alias intake-ggl='kubectl --context=$prod -l app=pai-analyze-intake-google'
+alias inggl='kubectl --context=$prod -l app=pai-analyze-intake-google'
 
-alias intake-ms='kubectl --context=$prod -l app=pai-analyze-intake-ms'
+alias inms='kubectl --context=$prod -l app=pai-analyze-intake-ms'
 
-alias intake-x='kubectl --context=$prod -l app=pai-analyze-intake-ms-exchange'
+alias inx='kubectl --context=$prod -l app=pai-analyze-intake-ms-exchange'
 
 alias features='kubectl --context=$prod -l app=pai-analyze-features'
 

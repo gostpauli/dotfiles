@@ -56,7 +56,6 @@ brew install python2
 brew install pyenv
 brew install pyenv-virtualenv
 brew install git
-brew install kubernetes-cli
 brew install scala
 brew install sbt
 brew install elasticsearch
@@ -65,6 +64,15 @@ brew cask install PyCharm
 brew cask install DataGrip
 brew cask install WebStorm
 brew cask install https://raw.githubusercontent.com/rapid7/awsaml/master/brew/cask/awsaml.rb
+
+# Docker 
+brew cask install docker
+brew cast install docker-toolbox
+brew install docker-compose docker-machine xhyve docker-machine-driver-xhyve
+
+# k8s
+brew install kubernetes-cli
+brew cask install minikube
 
 
 # Install font tools.
