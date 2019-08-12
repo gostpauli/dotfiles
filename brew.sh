@@ -64,6 +64,7 @@ brew cask install PyCharm
 brew cask install DataGrip
 brew cask install WebStorm
 brew cask install https://raw.githubusercontent.com/rapid7/awsaml/master/brew/cask/awsaml.rb
+brew cask install postgres
 
 # Docker 
 brew cask install docker
@@ -73,6 +74,9 @@ brew install docker-compose docker-machine xhyve docker-machine-driver-xhyve
 # k8s
 brew install kubernetes-cli
 brew cask install minikube
+brew tap markeissler/hyperkit
+brew install hyperkit
+brew install kops
 
 
 # Install font tools.

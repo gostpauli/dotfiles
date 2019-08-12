@@ -159,7 +159,7 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # Kubectl
-alias ks=kubectl
+alias ks='kubectl --context=$prod --namespace=kube-system'
 
 alias k='kubectl --context=$prod'
 
@@ -172,6 +172,10 @@ alias inms='kubectl --context=$prod -l app=pai-analyze-intake-ms'
 alias inx='kubectl --context=$prod -l app=pai-analyze-intake-ms-exchange'
 
 alias features='kubectl --context=$prod -l app=pai-analyze-features'
+
+alias blast='kubectl --context=$prod -l app=pai-analyze-brain'
+
+alias alog='kubectl --context=$prod -l app=pai-analyze-features-activity-log'
 
 alias sf-api='kubectl --context=$prod -l app=pai-salesforce-api'
 
