@@ -1,7 +1,17 @@
 " Use the Solarized Dark theme
 set background=dark
+"let g:solarized_termtrans=1
+let g:solarized_termcolors=   256 
+let g:solarized_termtrans =   0
+let g:solarized_degrade   =   0
+let g:solarized_bold      =   1
+let g:solarized_underline =   1
+let g:solarized_italic    =   1
+let g:solarized_contrast  =   "high"
+let g:solarized_visibility=   "high"
+let g:solarized_hitrail   =   0
+let g:solarized_menu      =   1
 colorscheme solarized
-let g:solarized_termtrans=1
 
 " Make Vim more useful
 set nocompatible
@@ -47,7 +57,8 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list

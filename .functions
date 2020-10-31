@@ -177,7 +177,13 @@ function branch() {
 
 function gpush() {
 	current_branch=$(branch)
-	git push origin ${current_branch}
+  if [[ $current_branch = "master" ]]
+  then
+    echo "NOT PUSHING master BRANCH"
+  else
+    echo "pushing branch $current_branch"
+	  git push origin ${current_branch}
+  fi
 }
 
 function gpull() {

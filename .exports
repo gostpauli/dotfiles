@@ -36,3 +36,6 @@ export GPG_TTY=$(tty);
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 #export PYENV_VERSION='system'
+
+#Scala
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xmx4G"

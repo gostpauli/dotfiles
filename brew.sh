@@ -47,8 +47,27 @@ brew install grep
 brew install openssh
 brew install tmux
 brew cask install iterm2
+brew install ssh-copy-id
+
+# Java things 
+brew install jenv
 brew cask install java
-brew cask install homebrew/cask-versions/java8
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+brew cask install adoptopenjdk/openjdk/adoptopenjdk11
+brew cask install adoptopenjdk/openjdk/adoptopenjdk12
+brew install gradle
+
+brew install scalaenv
+brew install apache-spark
+
+# Development
+brew install python3
+brew install python2
+brew install pyenv
+brew install pyenv-virtualenv
+brew install git
+brew install scala
 
 # Development
 brew install python3
@@ -59,6 +78,7 @@ brew install git
 brew install scala
 brew install sbt
 brew install elasticsearch
+brew install circleci
 brew cask install intellij-idea
 brew cask install PyCharm
 brew cask install DataGrip
@@ -77,6 +97,8 @@ brew cask install minikube
 brew tap markeissler/hyperkit
 brew install hyperkit
 brew install kops
+brew install txn2/tap/kubefwd
+brew upgrade kubefwd
 
 
 # Install font tools.
@@ -132,5 +154,7 @@ brew install vbindiff
 brew install zopfli
 brew install jq
 
+brew cask install osxfuse
+brew install ext4fuse
 # Remove outdated versions from the cellar.
 brew cleanup

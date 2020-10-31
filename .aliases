@@ -29,6 +29,7 @@ fi
 alias p37=". ~/.venv/python37/bin/activate"
 alias p3=". ~/.venv/python3/bin/activate"
 alias activate=". ./venv/bin/activate"
+alias ipy="ipython --TerminalInteractiveShell.editing_mode=vi"
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
@@ -159,9 +160,13 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # Kubectl
-alias ks='kubectl --context=$prod --namespace=kube-system'
+alias ksys='kubectl --context=$prod --namespace=kube-system'
 
 alias k='kubectl --context=$prod'
+alias ks='kubectl --context=$stage'
+
+alias kfwdp='kubectl config use-context $prod;sudo kubefwd'
+alias kfwds='kubectl config use-context $stage;sudo kubefwd'
 
 alias intake='kubectl --context=$prod -l app=pai-analyze-intake'
 
@@ -183,3 +188,9 @@ alias ass='kubectl --context=$prod -l app=pai-analyze-activities'
 
 # Pyenv
 alias pe=pyenv
+
+# Databricks
+alias dbprod='databricks --profile prod'
+alias db='databricks --profile staging'
+
+
